@@ -56,5 +56,74 @@ Yes, all numbers are less than 25, the expression check resulted "${isLess25}"`)
 
 
 /*************** Part 2: Math Problems *************************/
+//You are planning a cross-country road trip!
+//The distance of the trip, in total, is 1,500 miles.
+//Your car’s fuel efficiency is as follows:
+//At 55 miles per hour, you get 30 miles per gallon.
+//At 60 miles per hour, you get 28 miles per gallon.
+//At 75 miles per hour, you get 23 miles per gallon.
+//You have a fuel budget of $175.
+//The average cost of fuel is $3 per gallon.
+//Set up a program to answer the following questions:
+//How many gallons of fuel will you need for the entire trip?
+//Will your budget be enough to cover the fuel expense?
+//How long will the trip take, in hours?
+//Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+//Log the result
+
+const totalDistance = 1500;
+const fullBudget = 175;
+const costOfFuel_perGallon = 3;
+
+let milesPerHour = 55;
+let milesPerGallon = 30;
+
+//How many gallons of fuel will you need for the entire trip?
+let totalGallons = totalDistance / milesPerGallon;
+//Will your budget be enough to cover the fuel expense?
+let temp = totalGallons * costOfFuel_perGallon;
+let isBudgetenough = (fullBudget > totalGallons * costOfFuel_perGallon) ? `Yes, its total of ${temp}` : `No, its total of ${temp} which is above the budget of $175`;
+///How long will the trip take, in hours?
+let totalHours = totalDistance / milesPerHour;
+
+console.log(`                                 `);
+
+//Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+//Log the result
+console.log(`At 55 miles per hour`);
+console.log(`---------------------`);
+console.log(`Number of gallons of fuel required: ${totalGallons}
+Is alloted budget enough: ${isBudgetenough};
+Total hours required: ${totalHours}`);
+
+milesPerHour = 60;
+milesPerGallon = 28;
+totalGallons = totalDistance / milesPerGallon;
+temp = totalGallons * costOfFuel_perGallon;
+isBudgetenough = (fullBudget > totalGallons * costOfFuel_perGallon) ? `Yes, its total of ${temp}` : `No, its total of ${temp} which is above the budget of $175`;
+totalHours = totalDistance / milesPerHour;
+console.log(`At 60 miles per hour`);
+console.log(`---------------------`);
+console.log(`Number of gallons of fuel required: ${totalGallons}
+Is alloted budget enough: ${isBudgetenough};
+Total hours required: ${totalHours}`);
+
+milesPerHour = 75;
+milesPerGallon = 23;
+totalGallons = totalDistance / milesPerGallon;
+temp = totalGallons * costOfFuel_perGallon;
+isBudgetenough = (fullBudget > totalGallons * costOfFuel_perGallon) ? `Yes, its total of ${temp}` : `No, its total of ${temp} which is above the budget of $175`;
+totalHours = totalDistance / milesPerHour;
+console.log(`At 75 miles per hour`);
+console.log(`---------------------`);
+console.log(`Number of gallons of fuel required: ${totalGallons}
+Is alloted budget enough: ${isBudgetenough};
+Total hours required: ${totalHours}`);
+
+console.log(`                                 `);
+
+//Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+console.log(`After comparing the results, traveling at 60 mph makes more sense as it stays within the budget and consumes a moderate amount of time.`)
+
 
 
