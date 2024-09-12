@@ -48,10 +48,10 @@ let isLess25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
 console.log(isLess25);
 
 //Use string concatenation or template literals to format the outputs in a reasonable way.
-console.log(`All four numbers are not divisible by 5 as it resulted "${result}"
-First number n1 is not greater than n4, as the result of this is "${result1}"
-After performing given arthematic chain of operations, final result is "${result2}"
-Yes, all numbers are less than 25, the expression check resulted "${isLess25}"`)
+console.log(`1. All four numbers are not divisible by 5, Result:"${result}".
+2. First number n1 is not greater than n4, Result:"${result1}".
+3. After performing given arthematic chain of operations, final result is "${result2}".
+4. Yes, all numbers are less than 25, Result:"${isLess25}".`)
 
 
 
@@ -123,7 +123,4 @@ Total hours required: ${totalHours}`);
 console.log(`                                 `);
 
 //Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
-console.log(`After comparing the results, traveling at 60 mph makes more sense as it stays within the budget and consumes a moderate amount of time.`)
-
-
-
+console.log(`After comparing the results, traveling at 60 mph makes more sense as it stays within the budget and consumes a moderate amount of time.`);
